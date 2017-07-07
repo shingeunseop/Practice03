@@ -4,7 +4,14 @@ public class Base {
     
     public void service(String state) {
         
-        //코드작성
+        if(state=="낮") {
+        	day();
+        }else if(state=="밤") {
+        	night();
+        }else if(state=="오후") {
+        	afternoon();
+        }
+        
     }
 
     public void day() {
@@ -12,7 +19,7 @@ public class Base {
     }
 
     public void night() {
-        //
+        System.out.println("night");
     }
     
     public void afternoon(){
