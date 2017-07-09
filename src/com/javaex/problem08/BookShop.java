@@ -24,7 +24,6 @@ public class BookShop {
         int num = scanner.nextInt();
         scanner.close();
         books[num].stateCode=0;
-        System.out.println(books[0]);
 
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
        
@@ -35,9 +34,9 @@ public class BookShop {
     //(2)전달받은 배열을 모두 출력하는 메소드
     private static void displayBookInfo(Book[] books) {
     	for(int i=0;i<=books.length; i++) {
-    		System.out.println(books[i]+" 대여유무:재고있음");
+    		System.out.println(books[i].getBookNo()+" 책제목:"+books[i].getTitle()+",  작가:"+books[i].getAuthor()+" 대여유무:재고있음");
     		if(books[i].stateCode()==0)
-    			System.out.println(books[i]+" 대여유무:대여중");
+    			System.out.println(books[i].getBookNo()+" 책제목:"+books[i].getTitle()+",  작가:"+books[i].getAuthor()+" 대여유무:대여중");
     	}
         //코드작성
     }
