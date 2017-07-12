@@ -6,6 +6,7 @@ public class Member {
 	private int point;
 	
 	
+	
 	public void setId(String id) {
 		this.id=id;
 	}
